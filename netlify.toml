@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/mfe-angular-app/index.html"
   status = 200
 [[headers]]
   for = "/*"
