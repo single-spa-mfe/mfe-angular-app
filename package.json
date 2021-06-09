@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve:single-spa:mfe-angular-app",
-    "build": "ng build:single-spa:mfe-angular-app",
+    "start": "npm run serve:single-spa",
+    "build": "npm run build:single-spa",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:single-spa:mfe-angular-app": "ng build mfe-angular-app --prod --deploy-url http://localhost:4200/",
-    "serve:single-spa:mfe-angular-app": "ng s --project mfe-angular-app --disable-host-check --port 4200 --deploy-url http://localhost:4200/ --live-reload false"
+    "build:single-spa": "ng build --prod --deploy-url --output-hashing none",
+    "serve:single-spa": "ng serve --disable-host-check --port 4200 --deploy-url http://localhost:4200/ --live-reload false"
   },
   "private": true,
   "dependencies": {
